@@ -1,12 +1,20 @@
 {
-  "name": "server",
+  "name": "typescript-mern-images",
   "version": "1.0.0",
   "main": "app.ts",
   "author": "ak",
   "license": "MIT",
+  "engines": {
+    "node": "16.x"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "/client/node_modules"
+  ],
   "scripts": {
-    "start": "ts-node --transpile-only app.ts",
-    "dev": "ts-node-dev --respawn --pretty --transpile-only app.ts"
+    "start": "cd client && ts-node --transpile-only app.ts",
+    "dev": "cd client && ts-node-dev --respawn --pretty --transpile-only app.ts",
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",

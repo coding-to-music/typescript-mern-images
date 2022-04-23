@@ -2,7 +2,7 @@
 
 # 🚀 Javascript full-stack 🚀
 
-### React / Next / MongoDB / eCharts / Storybook / GitHub API
+## A fullstack Project Management Software made using React JS (Typescript), Node JS + Express (Typescript), and Mongo DB.
 
 https://github.com/coding-to-music/typescript-mern-images
 

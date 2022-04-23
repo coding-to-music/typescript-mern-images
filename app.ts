@@ -1,10 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import { connectDB } from "./utils/db";
+import { connectDB } from "./server/utils/db";
 import { BASE_PATH, PUBLIC_DIR_NAME, STATIC_PATH } from "./config";
 import path from "path";
-import rootRouter from "./routes";
+import rootRouter from "./server/routes";
 
 // dotenv config
 dotenv.config();

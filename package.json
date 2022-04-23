@@ -12,8 +12,8 @@
     "/client/node_modules"
   ],
   "scripts": {
-    "start": "cd client && ts-node --transpile-only app.ts",
-    "dev": "cd client && ts-node-dev --respawn --pretty --transpile-only app.ts",
+    "start": "cd client && ts-node --transpile-only ../app.ts",
+    "dev": "cd client && ts-node-dev --respawn --pretty --transpile-only ../app.ts",
     "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
   },
   "devDependencies": {
